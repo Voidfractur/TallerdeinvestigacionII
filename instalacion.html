@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Instalación</title>
+    <link rel="stylesheet" href="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <style type="text/css">
+        body {
+            background-color: #B7B7B7;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <a href="index.html" class="link-dark">
+        <h1>GameMaker</h1>
+    </a>
+
+    <!--<div class="card">
+		<div class="card-header">
+			Featured
+		</div>
+		<div class="card-body">
+			<h5 class="card-title">Special title treatment</h5>
+			<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+			<a href="#" class="btn btn-primary">Go somewhere</a>
+		</div>
+	</div>-->
+
+    <div class="d-flex align-items-start">
+        <div class="nav flex-column nav-pills me-3 col-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Instalación</button>
+            <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Árbol de recursos</button>
+            <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Menú Archivo</button>
+            <!--<button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill" data-bs-target="#v-pills-settings" type="button" role="tab" aria-controls="v-pills-settings" aria-selected="false">Paso 4</button>
+			<button class="nav-link" id="v-pills-paso-tab" data-bs-toggle="pill" data-bs-target="#v-pills-paso" type="button" role="tab" aria-controls="v-pills-paso" aria-selected="false">Paso 5</button>-->
+        </div>
+        <div class="content-fluid tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <h1 class="bbc titulo1"><span style="font-size: 24px">Instalación</span></h1><br>Primero debemos dirigirnos a la <a href="https://www.yoyogames.com/studio/download" class="bbc_url" title="Vínculo Externo" rel="nofollow external">página del proyecto</a> para descargarnos
+                la versión gratuita de <strong class="bbc">GameMaker: Studio</strong>, es un poco pesada ya que la misma contiene todas las librerías y complementos del software además del <strong class="bbc">IDE</strong>, el cual es importante mencionar
+                que solo correrá en entornos Windows.<br><br>Luego de la descarga realizamos la instalación de manera habitual como cualquier programa de Windows, registramos nuestra copia gratis y procedemos a ejecutar nuestro <strong class="bbc">IDE</strong>.<br>
+                <br><img class="rounded mx-auto d-block" src="img/install/1.jpg" alt="img1">
+                <br>Como vemos la disposición de los elementos iniciales es bastante similar a los <strong class="bbc">IDE</strong> de desarrollo como <strong class="bbc">Eclipse</strong> o <strong class="bbc">NetBeans</strong>, sin embargo lo que podemos
+                hacer con cada opción del mismo va más allá de los IDE nombrados, veamos entonces los distintos elementos que conforman a <strong class="bbc">GameMaker: Studio</strong> y que podemos hacer con cada uno de ellos.
+            </div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                <h1 class="bbc titulo1"><span style="font-size: 24px">Árbol de recursos</span></h1><br>En la parte izquierda de nuestra interfaz nos encontramos con el <strong class="bbc">árbol de recursos</strong>, aquí veremos una vista de los recursos en nuestro proyecto
+                el cual funciona de la misma manera que el explorador de Windows. Si algún elemento tiene un símbolo más (+) quiere decir que hay recursos dentro del mismo, donde al presionarlo se expandirá y al presionar el símbolo menos (-) se retraerá.<br><br>
+                <img class="rounded mx-auto d-block" src="img/install/2.jpg" alt="arbolrecursos">
+                <br>Podemos cambiar el nombre de los recursos excepto el del nivel superior que es el que indica el tipo de recurso. Adicionalmente podemos obtener un menú de contexto para cada recurso haciendo click derecho en el mismo dándonos más opciones
+                para el manejo de nuestro recurso.<br><br>
+                <img class="rounded mx-auto d-block" src="img/install/3.jpg" alt="img3">
+            </div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                <h1 class="bbc titulo1"><span style="font-size: 24px">Menú archivo</span></h1><br>En este menú nos encontraremos con los comandos para cargar y guardar nuestros archivos pero tenemos algunas opciones adicionales:<br><br>
+                <img class="rounded mx-auto d-block" src="img/install/4.jpg" alt="menu">
+                <br>Veamos a detalle cada una de estas opciones:<br><br>
+
+                <div class="card border-primary">
+                    <div class="card-header bg-primary">
+                        Nuevo proyecto
+                    </div>
+                    <div class="card-body">
+                        <!--<h5 class="card-title">Special title treatment</h5>-->
+                        <p class="card-text">Con este comando creamos un nuevo proyecto desde cero cargándonos un nuevo árbol de recursos para el desarrollo de nuestro juego.</p>
+                        <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div><br>
+
+                <div class="card">
+                    <div class="card-header">
+                        Abrir proyecto
+                    </div>
+                    <div class="card-body">
+                        <!--<h5 class="card-title">Special title treatment</h5>-->
+                        <p class="card-text">Este comando abre un nuevo proyecto pero solo con extensión <strong class="bbc">.gmx</strong>.</p>
+                        <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div><br>
+
+                <div class="card">
+                    <div class="card-header">
+                        Importar proyecto
+                    </div>
+                    <div class="card-body">
+                        <!--<h5 class="card-title">Special title treatment</h5>-->
+                        <p class="card-text">Con este comando podemos importar un proyecto de <em class="bbc">GameMaker: Studio</em>, es importante que sea un comprimido con la extensión <strong class="bbc">.gmz </strong>para que se haga sin problemas y sea guardado como
+                            <strong class="bbc">.gmx</strong> luego de la importación.</p>
+                        <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div><br>
+
+                <div class="card">
+                    <div class="card-header">
+                        Archivos recientes
+                    </div>
+                    <div class="card-body">
+                        <!--<h5 class="card-title">Special title treatment</h5>-->
+                        <p class="card-text">Aquí abrimos archivos que hayamos abierto o modificado recientemente.</p>
+                        <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div><br>
+
+                <div class="card">
+                    <div class="card-header">
+                        Guardar, Guardar como y Guardar todo
+                    </div>
+                    <div class="card-body">
+                        <!--<h5 class="card-title">Special title treatment</h5>-->
+                        <p class="card-text">Con <strong class="bbc">Guardar</strong> se guardará nuestro proyecto con la extensión <strong class="bbc">.gmx</strong>. Con <strong class="bbc">Guardar como</strong> salvamos nuestro archivo actual bajo un mismo nombre y por
+                            último, con <strong class="bbc">Guardar</strong> <strong class="bbc">todo</strong> salvamos todo lo que hayamos modificado en nuestro proyecto.</p>
+                        <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div><br>
+
+                <div class="card">
+                    <div class="card-header">
+                        Exportar proyecto
+                    </div>
+                    <div class="card-body">
+                        <!--<h5 class="card-title">Special title treatment</h5>-->
+                        <p class="card-text">Con este comando exportamos nuestro proyecto como un comprimido con formato .gmz, para luego importarlo como mencionamos anteriormente.</p>
+                        <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div><br>
+
+                <div class="card">
+                    <div class="card-header">
+                        Crear aplicación
+                    </div>
+                    <div class="card-body">
+                        <!--<h5 class="card-title">Special title treatment</h5>-->
+                        <p class="card-text">Una vez que nuestro juego esté listo, lo más probable es que vamos a querer compartirlos con otros para que lo prueben donde al usar este comando creamos una versión stand-alone de nuestro juego.</p>
+                        <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div><br>
+
+                <div class="card">
+                    <div class="card-header">
+                        Preferencias
+                    </div>
+                    <div class="card-body">
+                        <!--<h5 class="card-title">Special title treatment</h5>-->
+                        <p class="card-text">Aquí podemos ajustar como se ve nuestra interfaz, así como diferentes comportamientos cuando trabajamos con nuestros recursos.</p>
+                        <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+                    </div>
+                </div><br>
+            </div>
+            <!--<div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+				Paso 4
+			</div>
+			<div class="tab-pane fade" id="v-pills-paso" role="tabpanel" aria-labelledby="v-pills-paso-tab">
+				Paso 5
+			</div>-->
+        </div>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+</html>
