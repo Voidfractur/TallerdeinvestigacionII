@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>La guia de Game Maker</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../css/styles.css" rel="stylesheet" />
+
+    <style>
+        h1 {
+            color: white;
+            margin-left: 2em;
+        }
+        
+        h2 {
+            color: white;
+            margin-left: 2.5em;
+        }
+        
+        body {
+            background-image: url(img/fondo.jpg);
+        }
+        /*ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(0, 0, 0);
+        }*/
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /*li a:hover {
+            background-color: #0a0141;
+        }
+        
+        .active {
+            background-color: #4CAF50;
+        }
+        
+        */
+        
+        .imagen {
+            width: 70px;
+            height: 70px;
+            border-radius: 150px;
+        }
+        
+        .aside {
+            width: 30%;
+            background-color: #7061cf;
+            font-family: cursive;
+            color: white;
+            padding: 100px;
+            border: 90px;
+            float: right;
+            height: 200%;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+        
+        article {
+            background-color: #2864c3;
+            width: 72%;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+        
+        .imagen2 {
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+            border-style: double;
+            margin-left: 5em;
+            width: 70%;
+        }
+        
+        pre {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 1.1em;
+            text-align: justify;
+            margin-right: 2em;
+        }
+        
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .text {
+            margin-left: 5em;
+            padding: 5%;
+            width: 50%;
+            font-size: 1em;
+            border-style: double;
+            border-radius: 12px;
+            text-align: left;
+        }
+        
+        .button {
+            margin-left: 4em;
+            text-align: center;
+            border-style: double;
+            background-color: #4a48d7;
+            font-size: 140%;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        /*Al boton le damos un efecto de sombra*/
+        
+        .button:hover {
+            box-shadow: 5px 5px 10px black;
+        }
+        
+        .radioButton {
+            font-size: 150%;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: 1em;
+        }
+        
+        .radio {
+            margin-left: 5em;
+        }
+    </style>
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="imagen navbar-brand " href="../index.html"><img src="../img/logo-removebg-.png" alt="..." /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <div style="color: white;">GAME CREATION</div>
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Instalacion</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Gamemaker.html">GameMaker</a></li>
+                    <li class="nav-item"><a class="nav-link" href="GML.html">Funciones GML</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Ultimos temas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container">
+
+            <div class="masthead-heading text-uppercase">¿Que es GameMaker?</div>
+
+        </div>
+    </header>
+    <div style="background-color:#2864c3;">
+
+        <aside class="aside">
+            <h3>GAMEMAKER</h3>
+            <ul>
+                <a href="#pregunta">¿Que es GameMaker?</a>
+                <a href="#version">Versiones de Game Maker Studio</a>
+                <a href="#caracteristica">Caracteristicas</a>
+                <a href="#lenguaje">Lenguaje GML</a>
+
+            </ul>
+
+        </aside>
+        <article>
+            <br>
+            <h1>GameMaker</h1>
+            <a name="pregunta"></a>
+            <h2>¿Que es GameMaker?</h2>
+            <section>
+                <br>
+                <img src="../img/Newspost.png" alt="imagen no encontrada" class="imagen2">
+                <br>
+                <br>
+                <pre class="textoSecundario">
+                    Es un programa orientado al desarrollo de videojuegos. Se creó originariamente para 
+                    ayudar a estudiantes con pocas nociones de programación, y esa filosofía se mantiene 
+                    hoy en día. 
+                    Y, ¿quién creó Game Maker? Pues el profesor de estos estudiantes, Mark
+                    Overmars. Tiene una interfaz muy sencilla que nos permite hacer prototipos a los pocos 
+                    minutos, ya que tiene acciones predefinidas que podemos usar simplemente haciendo 
+                    Drag&Drop (arrastrar y soltar) y usar las imágenes y sonidos que tenemos rápidamente 
+                    para ver los resultados. 
+                    Con la versión actual nos permite exportar a múltiples plataformas, desde Windows, MAC 
+                    y Linux, hasta HTML5, iOS, Android, Windows Phone y últimamente incluso a videoconsolas 
+                    como PS3, PS4, PS Vita y Xbox.
+                    ¡Y todo esto sin cambiar de programa! Además, si queremos hacer cosas avanzadas, tiene 
+                    un lenguaje propio llamado GML, que nos permite hacer cosas como: Juegos multijugador, 
+                    Utilizar Inteligencia Artificial para el movimiento de los enemigos, Aprovechar los 
+                    logros y las tablas de puntuación de todas las plataformas, Utilizar físicas, physics 
+                    en inglés, como en el juego de Angry Birds, Posibilidad de crear extensiones específicas 
+                    para cada plataforma. Juegos en 3D, etc. 
+                    Como vemos, los tipos de juegos que se pueden crear en Game Maker son muchos, y las 
+                    posibilidades infinitas, todo dependerá de la dedicación, en horas y horas, que hagamos 
+                    a nuestro proyecto.
+       
+                </pre>
+                <br>
+                <a name="version"></a>
+                <h2>Versiones de Game Maker Studio</h2>
+
+                <pre>
+                    Actualmente, tenemos una versión gratuita que nos permite acceder a todas las posibilidades 
+                    del programa, con la posibilidad de exportar a juegos para Windows solamente. La única pega 
+                    es que aparece una pantalla inicial con el logo de Game Maker. Esta es la versión que ellos 
+                    llaman FREE.
+
+                    Si queremos optar a más opciones avanzadas, como modificar esa pantalla inicial, usar texturas 
+                    en las imágenes (ya explicaremos ese apartado cuando llegue), tener múltiples configuraciones 
+                    (por ejemplo, crear un juego gratuito y otro de pago), testeo en Android, tiene la versión 
+                    Professional, que cuesta actualmente 149,99$. Con esta versión también tenemos la posibilidad 
+                    de comprar los diferentes módulos de exportación que nos pueda interesar, aunque viene por 
+                    defecto las opciones de exportación de módulos para ordenadores de escritorio, es decir, 
+                    tenemos también  las exportaciones de Mac OSX y Ubuntu Linux.
+
+                    Si queremos la exportación para HTML5 el precio es de 99,99$, y el de Tizen (una nueva plataforma 
+                    parecida a Android que ha sacado Samsung) es de 199,99$. Si además queremos otras exportaciones 
+                    interesantes, como pueden ser iOS, Windows Phone 8 o Android, el precio de cada exportación es de 
+                    199,99$. Las exportaciones a videoconsolas son gratuitas, y tenemos para Xbox One, PS4, PS Vita y 
+                    PS3.
+
+                    También hay que tener en cuenta el hardware que necesitamos. Por ejemplo, para exportar a Ubuntu 
+                    Linux, necesitamos un ordenador con ese sistema operativo, al igual que para exportar a iOS y/o 
+                    Mac OSX necesitamos un iMac o un MacBook Pro. Otro tema es que si queremos exportar para 
+                    videoconsolas necesitamos entrar en programas de desarrolladores de cada plataforma, dónde existen 
+                    otros requisitos que hay que tener en cuenta.
+
+                    También existe una versión llamada Master Collection, que con un precio de 799,99$, permite la 
+                    exportación de todos los módulos que hemos comentado anteriormente, y además nos ofrecen todos 
+                    los módulos futuros que vayan a existir. Por ejemplo, si tenemos muy claro que queremos hacer 
+                    juegos para Android, podríamos adquirir la versión Professional + el módulo de Android, con un 
+                    precio de 199,99$ + 149,99$. Eso hace un total de 349,98 dólares. Si además queremos también 
+                    exportar para iOS, podemos adquirir el módulo de iOS por 149,99$ más, o valorar la versión Master 
+                    Collection por un poco más de diferencia. Podéis ver todas las opciones en una tabla que hay en su 
+                    página web
+                </pre>
+                <a name="caracteristica"></a>
+                <h2>Caracteristicas</h2>
+
+                <pre>
+                    El programa está diseñado para permitir a sus usuarios desarrollar fácilmente videojuegos sin 
+                    tener que aprender un lenguaje de programación como C++ o Java. Para los usuarios experimentados 
+                    Game Maker contiene un lenguaje de programación de scripts llamado Game Maker Language (GML), 
+                    que permite a los usuarios personalizar aún más sus videojuegos y extender sus características. 
+                    Los videojuegos pueden ser distribuidos bajo cualquier licencia sujeta a los términos del EULA 
+                    de Game Maker, en archivos binarios ejecutables ".exe", paquetes Android ".apk", y conjuntos de 
+                    script HTML5, como código fuente con extensión .gmx (GM: Studio y GM: HTML5), .gm81 (Versión 8.1), 
+                    .gmk (versiones 7.x y 8.x), .gm6 (versión 6.x), .gmd (versiones 5.x y 4.x), y .gmf (versión 3 e 
+                    inferiores). Los usuarios de Game Maker tienen permitido distribuir e incluso vender sus creaciones 
+                    mientras cumplan con los términos del EULA de Game Maker, que prohíbe un número de programas 
+                    ilegales como los que involucran uso no autorizado de material con derechos de autor o los que 
+                    rompan la ley en general. Actualmente hay varios videojuegos creados con Game Maker que se venden 
+                    en Steam, y otros que se distribuyen gratuitamente en Gamejolt.
+                    <img src="../img/caracteristicas.png" alt="Imagen no encontrada" class="imagen2">
+
+                    La interfaz principal para el desarrollo de videojuegos de Game Maker usa un sistema de "arrastrar y 
+                    soltar", que permite a los usuarios que no están familiarizados con la programación tradicional crear 
+                    videojuegos intuitivamente organizando íconos en la pantalla. Game Maker viene con un conjunto de 
+                    bibliotecas de acciones estándar, que cubren cosas como movimiento, dibujo básico, y control simple 
+                    de estructuras. Para extender la funcionalidad de arrastrar y soltar de Game Maker, los usuarios 
+                    pueden construir bibliotecas de acciones personalizadas para agregar nuevas acciones a sus video
+                    juegos. 
+                    Estas pueden ser creadas (generalmente por usuarios más avanzados) usando la herramienta de 
+                    generación especial de bibliotecas.
+
+                    
+                </pre>
+                <a name="lenguaje"></a>
+                <h2>Lenguaje GML</h2>
+
+                <pre>
+                    Game Maker usa su propio lenguaje de programación, Game Maker Language (GML), influenciado 
+                    principalmente por el lenguaje C y Pascal, con el que se pueden conseguir videojuegos complejos,
+                    pues aunque Game Maker está diseñado para la creación de videojuegos en 2 dimensiones, usando 
+                    GML se pueden conseguir videojuegos 3D avanzados tales como un videojuego de disparos en primera 
+                    persona (FPS).
+                    <img src="../img/GML2.png" alt="Imagen no encontrada" class="imagen2">
+                </pre>
+                <pre>
+                    El desarrollo de un videojuego es realmente simple, al basarse en el manejo de:
+                     ° Recursos (gráficos, sonidos, fondos, etc.), que se asignan a objetos.
+                     ° Eventos (presionar una tecla, mover el ratón, etc.), a través de los que se ejecutan comandos.
+                     ° Objetos, sobre los que se actúa en el videojuego.
+
+                    Las acciones del videojuego se pueden programar de dos formas distintas:
+                     ° La interfaz drag & drop («arrastrar y soltar»): el programador arrastra «cajas» a una lista; 
+                       cada una de esas "cajas" realiza una determinada acción. Se gana en facilidad de manejo, a 
+                       cambio de una menor flexibilidad y potencia.
+                     ° El lenguaje GML (Game Maker Language): es el lenguaje de programación propio de Game Maker, 
+                       más potente, con el que se puede acceder a todas las funciones y posibilidades de Game Maker.
+
+                    La sintaxis de la programación en GML es muy flexible, es indiferente la forma en la que se 
+                       aplican algunas reglas a la sintaxis, y entre ellas están:
+                     ° Posibilidad de incluir o no el punto y coma (";") al final de cada línea.
+                     ° Delimitar bloques de código con begin y end o con llaves ("{" y "}").
+                     ° Operador de igualdad, es indiferente si se usa un doble igual ("==") para leer el valor de una 
+                        variable o para escribir un valor.
+                    
+                    Game Maker no compila los ejecutables de los juegos, sino que pasa el código por su propio intérprete 
+                    para formar los ejecutables de los juegos. Por ello, no resulta muy eficiente para grandes proyectos. 
+                    Overmars ha confirmado que no piensa compilar jamás el GML.
+
+                    A partir de la versión 6.1 se empezó a usar Direct3D para los gráficos, lo cual resultó en una baja de 
+                    velocidad en los juegos en comparación con la versión 5.3a, que utilizaba DirectDraw. También hay 
+                    soporte para bibliotecas de enlace dinámico hechas en C++, Delphi y Pascal, y se pueden crear 
+                    videojuegos 3D o con soporte multijugador, entre otras funcionalidades.
+
+                    Game Maker ha atraído un número sustancial de usuarios; principalmente porque permite es accesible 
+                    tanto para los usuarios principiantes, como para los usuarios más avanzados que realizan tareas más 
+                    complejas. No está limitado en la creación de videojuegos como otros programas, pues admite la 
+                    creación de diversos géneros de videojuegos, incluyendo videojuegos de plataformas, disparos en 
+                    primera persona, disparos en tercera persona, videojuegos multijugador, videojuegos de rol y video
+                    juegos de simulación. También es posible crear aplicaciones de otros tipos con Game Maker debido a 
+                    la flexibilidad que brinda.
+                </pre>
+                <h4 style="color: white;">Comentarios</h4>
+                <input type="text" name="Comentarios.." id="" class="text">
+                <br>
+                <input type="button" value="Enviar" class="button"> <input type="button" value="Cancelar" class="button">
+                <br>
+                <br> <input type="radio" name="Me gusto" id="button" value="Me gusto XD" class="radio">
+                <label for="Me gusto" class="radioButton">Me gusto XD</label><br>
+                <input type="radio" name="No me gusto" id="button" value="No me gusto " class="radio">
+                <label for="Me gusto" class="radioButton">No me gusto :(</label><br>
+                <br>
+                <br>
+
+            </section>
+        </article>
+    </div>
+    <!-- Footer-->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-lg-start">
+                    Copyright &copy; tu sitio
+                    <!-- This script automatically adds the current year to your website footer-->
+                    <!-- (credit: https://updateyourfooter.com/)-->
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                </div>
+                <div class="col-lg-4 my-3 my-lg-0">
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a class="link-dark text-decoration-none me-3" href="#!">Politica de privasidad</a>
+                    <a class="link-dark text-decoration-none" href="#!">Terminos de uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
